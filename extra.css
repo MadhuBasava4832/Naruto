@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.elements{
+    width: 100%;
+    height: 100svh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    font-size: 2rem;
+    left: -120%;
+    transition: all 0.9s;
+    z-index: 86 !important;
+}
+/* .elements:hover{
+    cursor: pointer;
+} */
+.element{
+    width: 150;
+    height: 40;
+    display: flex;align-items: center;justify-content: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5 10;
+}
+.red1{
+    color: red;
+}
+.elements.visible{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.element:hover{
+    background-color: white !important;
+    box-shadow: 0px 0px 10px 3px white;
+    color: red;
+    cursor: pointer;
+}
+.element:hover a{color: red;}
+
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20 0;
+
+}
+
+.imag {
+    width: 370;
+    height: 500;
+    transition: all 0.5s linear;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;    
+    transition: all 0.1s;
+}
+.imag:hover{
+    transform: translateY(-5px);
+    box-shadow: -5px 10px 12px 2px black;
+}
+.box{
+    width: 370;
+    height: 400;
+    background-size: 100% 100%;
+}
+.names{
+    width: 100%;
+    height: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: -2px -2px 2px rgb(177, 177, 177);
+    background-color: white;
+    z-index: 2;
+}
+.i1 {
+    background-image: url(./photos/jiraya.jpeg);
+    background-size: 100% 100%;
+}
+
+.i2 {
+    background-image: url(./photos/itachi.png);
+    background-size: 100% 100%;
+}
+
+.i3 {
+    background-image: url(./photos/obito\ \(19\).jpeg);
+    background-size: 100% 100%;
+}
+
+/* characters page images */
+.i4 {
+    background-image: url(./photos/luffy1.png);
+}
+
+.i5 {
+    background-image: url(./photos/mikey\ \(3\).jpeg);
+}
+
+.i6 {
+    background-image: url(./photos/minato.jpeg);
+}
+.i7 {
+    background-image: url(./photos/kakashi\ \(14\).jpeg);
+}
+
+.i8 {
+    background-image: url(./photos/madara1.jpeg);
+}
+
+.i9 {
+    background-image: url(./photos/gojo\ \(20\).jpeg);
+}
+.i10 {
+    background-image: url(./photos/takemichi.jpeg);
+}
+.i11 {
+    background-image: url(./photos/tanjiro.jpeg);
+}
+
+.i12 {
+    background-image: url(./photos/goku.jpeg);
+}
+.i13 {
+    background-image: url(./photos/saitama.jpeg);
+}
+.i14 {
+    background-image: url(./photos/cora.jpg);
+}
+.imag:hover .box{
+    transform: scale(1.05) rotateZ(2deg);
+    box-shadow: 0px 0px 15px 2px grey;
+}
+.forbutton{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.forbutton .button{
+    width: 100;
+    height: 35;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    padding: 8 12;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: hue-rotate(225deg); */
+
+}
+.forbutton .button:hover{
+    cursor: pointer;
+    background-color: #03e9f4;
+    filter: drop-shadow(0 0 10px #03e9f4);
+    
+}
+.forbutton .button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.forbutton .button span:nth-child(2) {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.forbutton .button span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(-90deg, transparent, #03e9f4);
+    animation: animate3 1s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.forbutton .button span:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(0deg,transparent, #03e9f4);
+    animation: animate4 1s infinite;
+    animation-delay: 0.75s;
+    
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+.sblue{
+    color: rgb(0, 46, 197);
+}

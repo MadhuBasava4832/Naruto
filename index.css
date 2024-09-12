@@ -1,0 +1,503 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: fit-nt;
+    background-image: url(./photos/akatsuki.webp);
+    background-size: 100% 100%;
+    position: relative;
+    aspect-ratio: 2/1;
+}
+
+.header {
+    width: 100%;
+    height: 140;
+    background: linear-gradient(rgb(17, 17, 17) 60%, rgb(141, 140, 140));
+    display: flex;
+    /* position: fixed; */
+    z-index: 99;
+    opacity: 0.7;
+    transition: all 0.9s;
+    top: -70px;
+}
+.header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width :992px){
+    .header{
+        height: 100px;
+    }
+}
+.logo {
+    width: 150px;
+    height: 80%;
+    /* border: 1px solid black; */
+    margin: 10px;
+    background-image: url(./icons/nar-removebg-preview.png);
+    background-size: 100% 100%;
+}
+
+
+.hea {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 30px;
+    margin-left: 20px;
+}
+.hide{
+    width: 30;
+    height: 30;
+    position: absolute;
+    right: 50;
+    top: 32;
+    display: none;
+    background-image: url(./icons/w_menu.svg);
+    background-size: 100% 100%;
+}
+.h1 {
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 10px;
+    position: relative;
+    /* opacity: 1!important; */
+}
+.h1:hover{ cursor: pointer;  }
+.h1::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    transition: all 0.4s
+}
+.h1:hover:before {
+    width: 100%;
+}
+
+.size {
+    font-size: 4rem;
+    /* border: 1px solid black; */
+}
+
+.siz {
+    font-size: 1.5rem;
+    padding-left: 30;
+}
+
+@media screen and (max-width:768px) {
+    .hide{
+        display: block;
+        position: absolute;
+    }
+
+    .hea {
+        display: none;
+    }
+
+    .size {
+        font-size: 2rem;
+    }
+
+    .siz {
+        font-size: 0.8rem;
+    }
+}
+
+.matt {
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.blll {
+    width: 100%;
+    height: fit-content;
+}
+
+.block2 {
+    width: 100%;
+}
+
+.explore {
+    width: 100%;
+    height: 5%;
+    /* border: 1px solid black; */
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+.four {
+    font-size: 120%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.res {
+    width: 100;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 20px;
+    transition: all 0.3s linear;
+}
+
+.res:hover {
+    background-color: red;
+    color: white;
+    filter: drop-shadow(0 0 10px red);
+    transform: scale(1.05);
+}
+
+.elevate {
+    color: grey;
+    font-size: 120%;
+    text-align: center;
+}
+
+/* .images {
+    height: 200;
+} */
+
+.five {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.o1 {
+    background-image: url(./photos/one\ piece\ \(11\).jpeg);
+    background-size: 100% 100%;
+}
+
+.o2 {
+    background-image: url(./photos/tokyo\ revengers\ \(8\).jpeg);
+    background-size: 100% 100%;
+}
+
+.o3 {
+    background-image: url(./photos/aot.jpg);
+    background-size: 100% 100%;
+}
+
+.o4 {
+    background-image: url(./photos/demon\ slayer.jpg);
+    background-size: 100% 100%;
+}
+
+.o5 {
+    background-image: url(./photos/death\ note\ \(10\).jpeg);
+    background-size: 100% 100%;
+}
+
+
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20 0;
+    /* border: 1px solid black; */
+}
+
+.imag {
+    width: 370;
+    height: 400;
+    transition: all 0.5s linear;
+}
+
+.i1 {
+    background-image: url(./photos/jiraya.jpeg);
+    background-size: 100% 100%;
+}
+
+.i2 {
+    background-image: url(./photos/itachi.png);
+    background-size: 100% 100%;
+}
+
+.i3 {
+    background-image: url(./photos/obito\ \(19\).jpeg);
+    background-size: 100% 100%;
+}
+
+.imag:hover {
+    transform: scale(1.05) rotateZ(2deg);
+    box-shadow: 0px 0px 15px 2px grey;
+}
+
+.scroll {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+
+img {
+    width: 5%;
+    /* height: 60%; */
+    padding-left: 70px;
+}
+
+.block {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subblock {
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bl1 {
+    width: 90%;
+    height: 10%;
+    background-color: gray;
+    border-radius: 50px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bl2 {
+    width: 90%;
+    height: 70%;
+    /* background-color: rgb(165, 180, 194); */
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.st {
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+}
+
+.st:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.st1:hover .aboutus {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: block;
+    z-index: 999999999;
+}
+
+.aboutus {
+    color: grey;
+    font-size: 1.2rem
+}
+
+span {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .aboutus {
+        font-size: 0.9rem;
+    }
+
+    .st {
+        font-size: 0.95rem;
+    }
+}
+
+.block4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1110px) {
+    .block4 {
+        height: fit-content;
+        gap: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.block40 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transition: all 2s;
+    border-radius: 20px;
+}
+
+.block41,
+.block43 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    background-size: 100% 100%;
+}
+
+.block41 {
+    background-image: url(./photos/naruto\(23\).jpeg);
+}
+
+.block43 {
+    transform: rotateY(180deg);
+    background-image: url(./photos/naruto\ sadsmile.jpeg);
+}
+
+.block40:hover {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.block42 {
+    font-size: 2rem;
+    width: 600px;
+    height: 400px;
+    /* background-color: grey; */
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.three {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.out {
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    padding: 5 10;
+    text-align: center;
+}
+
+.out:hover {
+    background-color: red;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px red);
+    transform: scale(1.05);
+}
+
+.block42 select {
+    font-size: 1.2rem;
+    padding: 5 10;
+    margin-left: 20px;
+}
+
+.block5 {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: -53;
+}
+
+.block51 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./icons/nar-removebg-preview.png);
+    background-size: 100% 100%;
+    filter: drop-shadow(0 0 10px white);
+    z-index: 0;
+}
+
+.block52 {
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+.smart {
+    margin: 30px;
+}
+.sm1{
+    display: flex;
+}
+.icons {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    background-color: white;
+}
+.ic1{
+    background-image: url(./icons/whatsapp\ logo.png);
+    background-size: 100% 100%;
+}
+.ic2{
+    background-image: url(./icons/twitter.png);
+    background-size: 100% 100%;
+}
+.ic3{
+    background-image: url(./icons/instagram.png);
+    background-size: 100% 100%;
+}
